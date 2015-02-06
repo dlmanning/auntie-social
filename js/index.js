@@ -11,6 +11,7 @@ var params = {screen_name: 'davidlymanning'};
 
 client.get('statuses/user_timeline', params, function(error, tweets, response){
 	if (!error) {
+		console.log(tweets);
 		tweetDispatcher.dispatch({
 			actionType: 'timeline-update',
 			timeline: tweets
