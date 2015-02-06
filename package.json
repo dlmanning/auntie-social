@@ -1,0 +1,15 @@
+{
+	"name"    : "your-app",
+	"version" : "0.1.0",
+	"main"    : "main.js",
+	"dependencies": {
+		"request": "^2.53.0",
+		"6to5ify": "^4.0.0",
+		"react": "0.13.0-beta.1",
+		"twitter": "^1.2.1",
+		"flux": "^2.0.1"
+	},
+	"browserify": {
+		"transform": [ "6to5ify" ]
+	}
+}
