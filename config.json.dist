@@ -1,0 +1,6 @@
+{
+	"consumer_key": "Super Secret",
+	"consumer_secret": "Super Super Secret",
+	"access_token_key": "Super Super Super Secret",
+	"access_token_secret": "Pretty Much a Secret"
+}
