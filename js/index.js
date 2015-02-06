@@ -7,11 +7,13 @@ import twitterConfig from '../config.json';
 
 var client = new Twitter(twitterConfig);
 
-var params = {screen_name: 'davidlymanning'};
+var params = {
+	screen_name: 'davidlymanning',
+	count: 50
+};
 
-client.get('statuses/user_timeline', params, function(error, tweets, response){
+client.get('statuses/home_timeline', params, function(error, tweets, response){
 	if (!error) {
-		console.log(tweets);
 		tweetDispatcher.dispatch({
 			actionType: 'timeline-update',
 			timeline: tweets
